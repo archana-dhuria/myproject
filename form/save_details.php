@@ -21,6 +21,16 @@
 	{
 		echo "<div class='info'>Sorry, <font color='blue'>".$last_name."</font> is not in the proper format for a lastname. <br>lastname should only contain letters and numbers.<br>Example formats: <font color='blue'>comfort</font>, <font color='blue'>victor18</font>, <font color='blue'>chuks29</font>, <font color='blue'>lemdy</font>, <font color='blue'>joyce</font>, <font color='blue'>prisca</font>, <font color='blue'>ibrahim</font>, <font color='blue'>Ahmad</font> etc</div>";
 	}*/
+		// else if(strlen($last_name) < 5)
+	// {
+	// 	echo "<div class='info'>Sorry, your lastname must not be less than 5 characters in length please. Thanks.</div>";
+	// }
+	/*else if(ereg('[^A-Za-z0-9]', $last_name))  //Be sure that lastname is properly formatted then proceed
+	{
+		echo "<div class='info'>Sorry, <font color='blue'>".$last_name."</font> is not in the proper format for a lastname. <br>lastname should only contain letters and numbers.<br>Example formats: <font color='blue'>comfort</font>, <font color='blue'>victor18</font>, <font color='blue'>chuks29</font>, <font color='blue'>lemdy</font>, <font color='blue'>joyce</font>, <font color='blue'>prisca</font>, <font color='blue'>ibrahim</font>, <font color='blue'>Ahmad</font> etc</div>";
+	}*/
+	
+
 	else
 	{
 		$db = new SQLite3('company.db');
